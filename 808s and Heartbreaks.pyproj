@@ -1,0 +1,58 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>dcddd1f3-f741-41a1-8739-d79653b65fa5</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>_808s_and_Heartbreaks.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>808s and Heartbreaks</Name>
+    <RootNamespace>808s and Heartbreaks</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="beatMaker\beatMaker\main.py" />
+    <Compile Include="_808s_and_Heartbreaks.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="beatMaker\" />
+    <Folder Include="beatMaker\beatMaker\" />
+    <Folder Include="beatMaker\beatMaker\sounds\" />
+    <Folder Include="beatMaker\beatMaker\sounds\kit2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="beatMaker\beatMaker\Roboto-Bold.ttf" />
+    <Content Include="beatMaker\beatMaker\saved_beats.txt" />
+    <Content Include="beatMaker\beatMaker\sounds\clap.wav" />
+    <Content Include="beatMaker\beatMaker\sounds\crash.wav" />
+    <Content Include="beatMaker\beatMaker\sounds\hi hat.WAV" />
+    <Content Include="beatMaker\beatMaker\sounds\kick.WAV" />
+    <Content Include="beatMaker\beatMaker\sounds\kit2\clap.wav" />
+    <Content Include="beatMaker\beatMaker\sounds\kit2\crash.wav" />
+    <Content Include="beatMaker\beatMaker\sounds\kit2\hi hat.wav" />
+    <Content Include="beatMaker\beatMaker\sounds\kit2\kick.wav" />
+    <Content Include="beatMaker\beatMaker\sounds\kit2\snare.wav" />
+    <Content Include="beatMaker\beatMaker\sounds\kit2\tom.wav" />
+    <Content Include="beatMaker\beatMaker\sounds\snare.WAV" />
+    <Content Include="beatMaker\beatMaker\sounds\tom.WAV" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
